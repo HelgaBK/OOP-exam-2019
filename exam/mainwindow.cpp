@@ -35,3 +35,17 @@ void MainWindow::on_pushButton_2_clicked()
     }
     ui->tableWidget->horizontalHeader()->resizeSections(QHeaderView::Stretch);
 }
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    QString name[] = {"Повість минулих літ", "Місто", "Кобзар", "Корона", "Чорна рада"};
+    QString author[] = {"Шевченко", "Франко", "Орвелл", "Коцюбинський", "Ван"};
+    QString genre[] = {"Комедія", "Трагедія", "Новела", "Повість", "Роман", "Драма"};
+    int count = ui->spinBox_2->value();
+    for (int i = 0; i < count; ++i) {
+        books.push_back(Book(name[rand() % 5],
+                            author[rand() % 5],
+                            1900 + rand() % (2020 - 1900),
+                            genre[rand() % 6]));
+    }
+}
