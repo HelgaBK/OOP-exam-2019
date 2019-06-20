@@ -34,3 +34,12 @@ unsigned int Book::getYear() {
 
 void Book::setYear(unsigned int _year) {
     year = _year;
+}
+
+QString Book::getName() {
+    return name;
+}
+
+void Book::setName(QString _name) {
+    name = _name;
+}
