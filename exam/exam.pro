@@ -28,12 +28,14 @@ SOURCES += \
         book.cpp \
         bplustree.cpp \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+        rbtree.cpp
 
 HEADERS += \
         book.h \
         bplustree.h \
-        mainwindow.h
+        mainwindow.h \
+        rbtree.h
 
 FORMS += \
         mainwindow.ui
