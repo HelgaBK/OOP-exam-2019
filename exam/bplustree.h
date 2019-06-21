@@ -1,11 +1,31 @@
-#ifndef BPLUSTREE_H
 #define BPLUSTREE_H
 
+#define MAX 100
+#define NULL 0
 
-class bplustree
+#include <book.h>
+
+class Node
 {
+    bool IS_LEAF;
+    int *key, size;
+    Node** ptr;
+    friend class BPTree;
 public:
-    bplustree();
+    Node()
+    {
+        key = new int[MAX];
+        ptr = new Node*[MAX+1];
+    }
 };
 
-#endif // BPLUSTREE_H
+
+
+class BPTree
+{
+    Node *root;
+public:
+    BPTree();
+    void search(Book);
+};
+

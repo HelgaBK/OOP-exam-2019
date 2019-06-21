@@ -26,11 +26,13 @@ CONFIG += c++11
 
 SOURCES += \
         book.cpp \
+        bplustree.cpp \
         main.cpp \
         mainwindow.cpp
 
 HEADERS += \
         book.h \
+        bplustree.h \
         mainwindow.h
 
 FORMS += \
